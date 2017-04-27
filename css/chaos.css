@@ -1,0 +1,19 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+#content {
+  padding-top: 15px;
+}
+#userInput {
+  padding-bottom: 20px;
+}
+@media (min-width: 992px){
+  #userInput .form-control{
+    width: 10%;
+  }
+}
+
+#errorMsg{
+  display: none;
+}

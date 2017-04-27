@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chaos Game</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/chaos.css">
+  <head>
+  <body>
+    <!-- Container div Start  -->
+    <div id="content" class="container">
+      <h2 class="text-center">Chaos Game</h1>
+    <!-- Error message row start -->
+      <div class="row">
+        <div class="col-sm-12">
+            <div id="errorMsg" class="alert alert-danger">Please do not leave any field empty.</div>
+        </div>
+      </div>
+      <!-- End Error message row -->
+
+      <!-- User Input div start -->
+      <div id="userInput">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>Please enter the x and y cordinates for three vertices of the equilateral triangle. Also enter the intial points. </p>
+          </div>
+        </div>
+        <form class="form-inline">
+          <label class="sr-only" for="vx1">Vertex X1</label>
+          <input type="text" class="form-control mb-2 mr-sm-2 mb-xs-0" id="vx1" placeholder="Vertex X1">
+          <label class="sr-only" for="vy1">Vertex Y1</label>
+          <input type="text" class="form-control mb-2 mr-sm-2 mb-xs-0" id="vy1" placeholder="Vertex Y1">
+          <label class="sr-only" for="vx2">Vertex X2</label>
+          <input type="text" class="form-control mb-2 mr-sm-2 mb-xs-0" id="vx2" placeholder="Vertex X2">
+          <label class="sr-only" for="vy2">Vertex Y2</label>
+          <input type="text" class="form-control mb-2 mr-sm-2 mb-xs-0" id="vy2" placeholder="Vertex Y2">
+          <label class="sr-only" for="vx3">Vertex X3</label>
+          <input type="text" class="form-control mb-2 mr-sm-2 mb-xs-0" id="vx3" placeholder="Vertex X3">
+          <label class="sr-only" for="vy3">Vertex Y3</label>
+          <input type="text" class="form-control mb-2 mr-sm-2 mb-xs-0" id="vy3" placeholder="Vertex Y3">
+          <label class="sr-only" for="currentX">Current X</label>
+          <input type="text" class="form-control mb-2 mr-sm-2 mb-xs-0" id="currentX" placeholder="Current X">
+          <label class="sr-only" for="currentY">Current Y</label>
+          <input type="text" class="form-control mb-2 mr-sm-2 mb-xs-0" id="currentY" placeholder="Current Y">
+          <button type="button" class="btn btn-primary mb-2 mb-xs-0" id="start">Start</button>
+          <button type="button" class="btn btn-primary ml-2 mb-2 mb-xs-0" id="stop">Stop</button>
+        </form>
+      </div>
+      <!-- End user input div -->
+
+      <!-- Canvas row start -->
+      <div class="row">
+        <div class="col-sm-12 text-center">
+           <canvas id="chaosCanvas"></canvas>
+        </div>
+      </div>
+      <!-- End Canvas row -->
+    </div>
+    <!-- End Container  div  -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/chaos.js"></script>
+  </body>
+</html>
